@@ -539,8 +539,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   min-height: 100px;
-  padding: 0 40px;
-  background-color: #2c39f2; }
+  padding: 0 40px; }
   .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -567,8 +566,7 @@ button,
 
 .footer {
   min-height: 100px;
-  padding: 0 60px;
-  background-color: #2c39f2; }
+  padding: 0 60px; }
 
 .modal {
   position: fixed;
