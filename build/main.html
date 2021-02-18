@@ -109,7 +109,42 @@
     </main>
 
     <footer class="body__footer footer">
-
+  <section class="body__contact contact" id="contact">
+    <div class="contact__content-box">
+      <h2 class="section-title">Как нас найти?</h2>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    </div>
+    <div class="contact__map-box">
+      <picture class="map__img-area">
+        <source type="image/webp" media="(min-width: 1024px)"  srcset="img/content/map_desktop@1.webp 1x, img/content/map_desktop@2.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"  srcset="img/content/map_tablet@1.webp 1x, img/content/map_tablet@2.webp 2x">
+        <source type="image/webp" srcset="img/content/map_mobile@1.webp 1x, img/content/map_mobile@2.webp 2x">
+        <source media="(min-width: 1024px)"  srcset="img/content/map_desktop@1.png 1x, img/content/map_desktop@2.png 2x">
+        <source media="(min-width: 768px)"  srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+        <img class=map__img" src="img/content/map_mobile@1.png" srcset="img/content/map_mobile@2.png 2x" width="957" alt="Видео">
+      </picture>
+    </div>
+    <div class="contact__contact-box">
+      <ul class="contact__list list">
+        <li class="contact__item">
+          <a class="contact__link" href="malto:puteshestviemechta@gmail.ru">
+            <svg width="26" height="20">
+              <use xlink:href="#mail"></use>
+            </svg>
+            puteshestviemechta@gmail.ru
+          </a>
+        </li>
+        <li class="contact__item">
+          <a class="contact__link" href="malto:puteshestviemechta@gmail.ru">
+            <svg width="22" height="23">
+              <use xlink:href="#phone"></use>
+            </svg>
+            puteshestviemechta@gmail.ru
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 </footer>
 
 
