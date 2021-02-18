@@ -124,3 +124,8 @@ button,
 [type="submit"] {
   appearance: none;
 }
+
+.list {
+  @include zero;
+  list-style: none;
+}
