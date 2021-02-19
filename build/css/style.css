@@ -645,10 +645,17 @@ button,
 
 .body__video {
   padding-top: 121px; }
+  @media (max-width: 1023px) {
+    .body__video {
+      padding-top: 64px; } }
 
 .body__footer {
   margin-top: 152px;
   margin-bottom: 98px; }
+  @media (max-width: 1023px) {
+    .body__footer {
+      margin-top: 64px;
+      margin-bottom: 50px; } }
 
 .header {
   display: -webkit-box;
@@ -1003,32 +1010,52 @@ button,
 .video {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(87.8%, #131314), color-stop(87.8%, #ffffff));
   background: linear-gradient(to bottom, #131314 87.8%, #ffffff 87.8%); }
+  @media (max-width: 1023px) {
+    .video {
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(83%, #131314), color-stop(83%, #ffffff));
+      background: linear-gradient(to bottom, #131314 83%, #ffffff 83%); } }
   .video p {
     margin: 0;
     padding: 0;
+    width: 25%;
     margin: auto;
     margin-top: 20px;
-    width: 25%;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.005em;
     color: rgba(255, 255, 255, 0.7); }
+    @media (max-width: 1023px) {
+      .video p {
+        width: 60%;
+        margin-top: 15px; } }
   .video__img-box {
     position: relative;
     width: 64.5%;
     margin: auto;
     margin-top: 55px; }
+    @media (max-width: 1023px) {
+      .video__img-box {
+        width: 65.5%;
+        margin-top: 40px; } }
   .video__img {
     display: block;
     margin: auto; }
   .video__play {
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 43.6%;
-    left: 45.9%;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
     border: none;
     background-color: transparent; }
+    @media (max-width: 1023px) {
+      .video__play svg {
+        width: 90px;
+        height: 90px; } }
 
 .contact p {
   margin: 0;
@@ -1040,9 +1067,16 @@ button,
   line-height: 31px;
   text-align: center;
   color: rgba(0, 0, 0, 0.7); }
+  @media (max-width: 1023px) {
+    .contact p {
+      width: 100%;
+      margin-top: 15px; } }
 
 .contact__map-box {
   margin-top: 41px; }
+  @media (max-width: 1023px) {
+    .contact__map-box {
+      margin-top: 20px; } }
 
 .contact__map-img {
   display: block;
@@ -1062,9 +1096,16 @@ button,
   width: 59%;
   margin: auto;
   margin-top: 38px; }
+  @media (max-width: 1023px) {
+    .contact__list {
+      width: 80%;
+      margin-top: 20px; } }
 
 .contact__item {
   padding-right: 17px; }
+  @media (max-width: 1023px) {
+    .contact__item {
+      padding-right: 10px; } }
 
 .contact__link {
   display: -webkit-box;
@@ -1079,6 +1120,9 @@ button,
 .footer {
   min-height: 100px;
   padding: 0 242px; }
+  @media (max-width: 1023px) {
+    .footer {
+      padding: 0 35px; } }
 
 .modal {
   position: fixed;

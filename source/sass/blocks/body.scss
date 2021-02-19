@@ -57,10 +57,19 @@
 
   &__video {
     padding-top: 121px;
+
+    @include viewport--md {
+      padding-top: 64px;
+    }
   }
 
   &__footer {
     margin-top: 152px;
     margin-bottom: 98px;
+
+    @include viewport--md {
+      margin-top: 64px;
+      margin-bottom: 50px;
+    }
   }
 }

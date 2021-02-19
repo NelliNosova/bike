@@ -10,10 +10,19 @@
     line-height: 31px;
     text-align: center;
     color: rgba($color-black, 0.7);
+
+    @include viewport--md {
+      width: 100%;
+      margin-top: 15px;
+    }
   }
 
   &__map-box {
     margin-top: 41px;
+
+    @include viewport--md {
+      margin-top: 20px;
+    }
   }
 
   &__map-img {
@@ -30,10 +39,19 @@
     width: 59%;
     margin: auto;
     margin-top: 38px;
+
+    @include viewport--md {
+      width: 80%;
+      margin-top: 20px;
+    }
   }
 
   &__item {
     padding-right: 17px;
+
+    @include viewport--md {
+      padding-right: 10px;
+    }
   }
 
   &__link {
