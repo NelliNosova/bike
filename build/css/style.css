@@ -594,25 +594,33 @@ button,
       padding: 0; } }
 
 .body .wrapper {
-  background-image: url(../img/bg/bike_desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 100% auto;
   max-width: 1920px;
   margin: auto; }
 
+.body .wrapper-promo {
+  background-color: #131314;
+  background-image: url(../img/bg/bike_desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto; }
+
+.body__header {
+  position: absolute;
+  width: 100%; }
+
 .body__promo {
-  margin-top: 250px; }
+  padding-top: 312px;
+  padding-bottom: 239px; }
 
 .body__about {
   width: 80%;
   margin: auto;
-  margin-top: 390px;
+  margin-top: 152px;
   margin-bottom: 154px; }
 
 .body__types {
-  padding-top: 150px;
-  padding-bottom: 129px; }
+  padding-top: 149px;
+  padding-bottom: 128px; }
 
 .body__video {
   padding-top: 121px; }
@@ -869,6 +877,9 @@ button,
     width: 64.5%;
     margin: auto;
     margin-top: 55px; }
+  .video__img {
+    display: block;
+    margin: auto; }
   .video__play {
     position: absolute;
     top: 43.6%;
@@ -889,6 +900,10 @@ button,
 
 .contact__map-box {
   margin-top: 41px; }
+
+.contact__map-img {
+  display: block;
+  margin: auto; }
 
 .contact__list {
   margin: 0;

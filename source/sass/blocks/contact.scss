@@ -16,6 +16,11 @@
     margin-top: 41px;
   }
 
+  &__map-img {
+    display: block;
+    margin: auto;
+  }
+
   &__list {
     @include zero;
 
