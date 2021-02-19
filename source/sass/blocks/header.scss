@@ -25,6 +25,10 @@
       top: 25px;
       left: 22px
     }
+
+    @include viewport--sm {
+      left: 16px
+    }
   }
 
   &__nav {

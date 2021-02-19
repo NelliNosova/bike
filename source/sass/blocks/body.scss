@@ -43,6 +43,12 @@
       margin-top: 20px;
       margin-bottom: 30px;
     }
+
+    @include viewport--sm {
+      width: 91%;
+      margin-top: 20px;
+      margin-bottom: 82px;
+    }
   }
 
   &__types {
@@ -51,7 +57,7 @@
 
     @include viewport--md {
       padding-top: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 34px;
     }
   }
 
@@ -60,6 +66,10 @@
 
     @include viewport--md {
       padding-top: 64px;
+    }
+
+    @include viewport--sm {
+      padding-top: 78px;
     }
   }
 
@@ -70,6 +80,11 @@
     @include viewport--md {
       margin-top: 64px;
       margin-bottom: 50px;
+    }
+
+    @include viewport--sm {
+      margin-top: 70px;
+      margin-bottom: 30px;
     }
   }
 }

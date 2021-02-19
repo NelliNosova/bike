@@ -25,7 +25,18 @@
         padding-top: 78px;
         padding-bottom: 79px;
         background-image: url(../img/bg/bike_tablet.jpg);
+        background-color: $color-bg-dark;
+        background-repeat: no-repeat;
+        background-position: center center;
       }
+
+      @include viewport--sm {
+        padding-top: 64px;
+        padding-bottom: 69px;
+        background-image: url(../img/bg/bike__mobile.jpg);
+        background-size: cover;
+      }
+
     }
 
     &--form {
@@ -35,6 +46,10 @@
         padding-top: 60px;
         width: 321px;
         margin: auto
+      }
+
+      @include viewport--sm {
+        width: 288px;
       }
     }
   }
@@ -76,6 +91,10 @@
       line-height: 32px;
       text-align: center;
     }
+
+    @include viewport--sm {
+      width: 85%;
+    }
   }
 
   &__form-content {
@@ -100,6 +119,10 @@
 
     @include viewport--md {
       margin-top: 30px;
+    }
+
+    @include viewport--sm {
+      margin-top: 20px;
     }
   }
 }

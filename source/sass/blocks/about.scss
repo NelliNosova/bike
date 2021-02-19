@@ -18,6 +18,12 @@
       margin-top: 33px;
     }
 
+    @include viewport--sm {
+      margin-top: 0;
+      font-size: 18px;
+      line-height: 34px;
+    }
+
     counter-reset: li-counter;
 
     li {
@@ -31,6 +37,12 @@
         width: 46%;
         margin-top: 53px;
         margin-bottom: 40px;
+      }
+
+      @include viewport--sm {
+        width: 100%;
+        margin-top: 85px;
+        margin-bottom: 0;
       }
 
       &::before {
@@ -50,10 +62,20 @@
         @include viewport--md {
           top: -54px;
         }
+
+        @include viewport--sm {
+          top: -50px;
+        }
       }
 
       &:nth-child(-n+9)::before {
         content: "0" counter(li-counter);
+      }
+
+      &:nth-child(n+3) {
+        @include viewport--sm {
+          margin-top: 91px;
+        }
       }
     }
   }

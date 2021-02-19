@@ -157,4 +157,11 @@ button,
   &--light {
     color: $color-white;
   }
+
+  &--footer {
+    @include viewport--sm {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
 }

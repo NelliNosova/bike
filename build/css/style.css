@@ -517,6 +517,10 @@ button,
       line-height: 41px; } }
   .section-title--light {
     color: #ffffff; }
+  @media (max-width: 767px) {
+    .section-title--footer {
+      font-size: 18px;
+      line-height: 30px; } }
 
 .visually-hidden {
   position: absolute;
@@ -634,6 +638,11 @@ button,
       width: 71%;
       margin-top: 20px;
       margin-bottom: 30px; } }
+  @media (max-width: 767px) {
+    .body__about {
+      width: 91%;
+      margin-top: 20px;
+      margin-bottom: 82px; } }
 
 .body__types {
   padding-top: 149px;
@@ -641,13 +650,16 @@ button,
   @media (max-width: 1023px) {
     .body__types {
       padding-top: 50px;
-      padding-bottom: 50px; } }
+      padding-bottom: 34px; } }
 
 .body__video {
   padding-top: 121px; }
   @media (max-width: 1023px) {
     .body__video {
       padding-top: 64px; } }
+  @media (max-width: 767px) {
+    .body__video {
+      padding-top: 78px; } }
 
 .body__footer {
   margin-top: 152px;
@@ -656,6 +668,10 @@ button,
     .body__footer {
       margin-top: 64px;
       margin-bottom: 50px; } }
+  @media (max-width: 767px) {
+    .body__footer {
+      margin-top: 70px;
+      margin-bottom: 30px; } }
 
 .header {
   display: -webkit-box;
@@ -685,6 +701,9 @@ button,
         position: relative;
         top: 25px;
         left: 22px; } }
+    @media (max-width: 767px) {
+      .header__logo {
+        left: 16px; } }
   .header__nav {
     width: 100%;
     padding-bottom: 8px;
@@ -767,7 +786,16 @@ button,
       .promo__box--tagline {
         padding-top: 78px;
         padding-bottom: 79px;
-        background-image: url(../img/bg/bike_tablet.jpg); } }
+        background-image: url(../img/bg/bike_tablet.jpg);
+        background-color: #131314;
+        background-repeat: no-repeat;
+        background-position: center center; } }
+    @media (max-width: 767px) {
+      .promo__box--tagline {
+        padding-top: 64px;
+        padding-bottom: 69px;
+        background-image: url(../img/bg/bike__mobile.jpg);
+        background-size: cover; } }
     .promo__box--form {
       width: 37.25%; }
       @media (max-width: 1023px) {
@@ -775,6 +803,9 @@ button,
           padding-top: 60px;
           width: 321px;
           margin: auto; } }
+      @media (max-width: 767px) {
+        .promo__box--form {
+          width: 288px; } }
   .promo__tagline {
     margin: 0;
     padding: 0;
@@ -807,6 +838,9 @@ button,
         font-size: 18px;
         line-height: 32px;
         text-align: center; } }
+    @media (max-width: 767px) {
+      .promo__content {
+        width: 85%; } }
   .promo__form-content {
     margin: 0;
     padding: 0;
@@ -825,6 +859,9 @@ button,
     @media (max-width: 1023px) {
       .promo__form {
         margin-top: 30px; } }
+    @media (max-width: 767px) {
+      .promo__form {
+        margin-top: 20px; } }
 
 .promo-form {
   display: -webkit-box;
@@ -849,6 +886,9 @@ button,
     @media (max-width: 1023px) {
       .promo-form__input {
         padding: 11px 21px; } }
+    @media (max-width: 767px) {
+      .promo-form__input {
+        padding: 11px 25px; } }
   .promo-form__btn {
     padding: 15px 28px;
     font-weight: 600;
@@ -858,6 +898,9 @@ button,
     background-color: #0ad9c6;
     border-radius: 6px;
     border: none; }
+    @media (max-width: 767px) {
+      .promo-form__btn {
+        padding: 13px 28px 16px; } }
 
 .about {
   position: relative; }
@@ -882,6 +925,11 @@ button,
     @media (max-width: 1023px) {
       .about__list {
         margin-top: 33px; } }
+    @media (max-width: 767px) {
+      .about__list {
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 34px; } }
     .about__list li {
       margin: 0;
       padding: 0;
@@ -893,6 +941,11 @@ button,
           width: 46%;
           margin-top: 53px;
           margin-bottom: 40px; } }
+      @media (max-width: 767px) {
+        .about__list li {
+          width: 100%;
+          margin-top: 85px;
+          margin-bottom: 0; } }
       .about__list li::before {
         content: counter(li-counter);
         position: absolute;
@@ -909,8 +962,14 @@ button,
         @media (max-width: 1023px) {
           .about__list li::before {
             top: -54px; } }
+        @media (max-width: 767px) {
+          .about__list li::before {
+            top: -50px; } }
       .about__list li:nth-child(-n+9)::before {
         content: "0" counter(li-counter); }
+      @media (max-width: 767px) {
+        .about__list li:nth-child(n+3) {
+          margin-top: 91px; } }
 
 .types {
   position: relative;
@@ -935,6 +994,9 @@ button,
             justify-content: space-around;
         width: 83.5%;
         padding-top: 20px; } }
+    @media (max-width: 767px) {
+      .types__list {
+        width: 84.5%; } }
     .types__list h3 {
       margin: 0;
       padding: 0;
@@ -973,11 +1035,18 @@ button,
           left: -37px;
           width: 127px;
           height: 127px; } }
+      @media (max-width: 767px) {
+        .types__item:nth-child(3n-2)::before {
+          top: 201px;
+          left: -25px; } }
   .types__item:nth-child(3n-1) {
     margin-top: 39px; }
     @media (max-width: 1023px) {
       .types__item:nth-child(3n-1) {
         margin-top: 10px; } }
+    @media (max-width: 767px) {
+      .types__item:nth-child(3n-1) {
+        margin-top: 22px; } }
     .types__item:nth-child(3n-1)::before, .types__item:nth-child(3n-1)::after {
       width: 47px;
       height: 47px;
@@ -994,6 +1063,9 @@ button,
   @media (max-width: 1023px) {
     .types__item:nth-child(3n) {
       margin-top: 30px; } }
+  @media (max-width: 767px) {
+    .types__item:nth-child(3n) {
+      margin-top: 22px; } }
   .types__item:nth-child(3n)::before {
     top: -32px;
     right: -36px;
@@ -1006,6 +1078,9 @@ button,
         right: -25px;
         width: 68px;
         height: 68px; } }
+    @media (max-width: 767px) {
+      .types__item:nth-child(3n)::before {
+        right: -20px; } }
 
 .video {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(87.8%, #131314), color-stop(87.8%, #ffffff));
@@ -1014,6 +1089,10 @@ button,
     .video {
       background: -webkit-gradient(linear, left top, left bottom, color-stop(83%, #131314), color-stop(83%, #ffffff));
       background: linear-gradient(to bottom, #131314 83%, #ffffff 83%); } }
+  @media (max-width: 767px) {
+    .video {
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(88.8%, #131314), color-stop(88.8%, #ffffff));
+      background: linear-gradient(to bottom, #131314 88.8%, #ffffff 88.8%); } }
   .video p {
     margin: 0;
     padding: 0;
@@ -1030,6 +1109,11 @@ button,
       .video p {
         width: 60%;
         margin-top: 15px; } }
+    @media (max-width: 767px) {
+      .video p {
+        width: 100%; } }
+  .video__content-box {
+    padding: 0 10px; }
   .video__img-box {
     position: relative;
     width: 64.5%;
@@ -1039,6 +1123,10 @@ button,
       .video__img-box {
         width: 65.5%;
         margin-top: 40px; } }
+    @media (max-width: 767px) {
+      .video__img-box {
+        width: 90%;
+        margin-top: 53px; } }
   .video__img {
     display: block;
     margin: auto; }
@@ -1056,6 +1144,10 @@ button,
       .video__play svg {
         width: 90px;
         height: 90px; } }
+    @media (max-width: 767px) {
+      .video__play svg {
+        width: 65px;
+        height: 65px; } }
 
 .contact p {
   margin: 0;
@@ -1071,6 +1163,10 @@ button,
     .contact p {
       width: 100%;
       margin-top: 15px; } }
+  @media (max-width: 767px) {
+    .contact p {
+      margin-top: 20px;
+      padding: 0 25px; } }
 
 .contact__map-box {
   margin-top: 41px; }
@@ -1100,12 +1196,24 @@ button,
     .contact__list {
       width: 80%;
       margin-top: 20px; } }
+  @media (max-width: 767px) {
+    .contact__list {
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 90%;
+      margin-top: 30px; } }
 
 .contact__item {
   padding-right: 17px; }
   @media (max-width: 1023px) {
     .contact__item {
       padding-right: 10px; } }
+  @media (max-width: 767px) {
+    .contact__item {
+      margin-bottom: 18px;
+      padding-right: 10px; }
+      .contact__item--mail {
+        padding-right: 0; } }
 
 .contact__link {
   display: -webkit-box;
@@ -1123,6 +1231,9 @@ button,
   @media (max-width: 1023px) {
     .footer {
       padding: 0 35px; } }
+  @media (max-width: 767px) {
+    .footer {
+      padding: 0; } }
 
 .modal {
   position: fixed;

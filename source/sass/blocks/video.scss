@@ -11,6 +11,13 @@
     $color-white 83%);
   }
 
+  @include viewport--sm {
+    background: linear-gradient(
+    to bottom,
+    $color-bg-dark 88.8%,
+    $color-white 88.8%);
+  }
+
   p {
     @include zero;
     width: 25%;
@@ -27,6 +34,14 @@
       width: 60%;
       margin-top: 15px;
     }
+
+    @include viewport--sm {
+      width: 100%;
+    }
+  }
+
+  &__content-box {
+    padding: 0 10px;
   }
 
   &__img-box {
@@ -38,6 +53,11 @@
     @include viewport--md {
       width: 65.5%;
       margin-top: 40px;
+    }
+
+    @include viewport--sm {
+      width: 90%;
+      margin-top: 53px;
     }
   }
 
@@ -59,10 +79,15 @@
 
     svg {
       @include viewport--md {
-          width: 90px;
-          height: 90px;
-        }
+        width: 90px;
+        height: 90px;
       }
+
+      @include viewport--sm {
+        width: 65px;
+        height: 65px;
+      }
+    }
   }
 
 }

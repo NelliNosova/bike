@@ -17,6 +17,10 @@
       padding-top: 20px;
     }
 
+    @include viewport--sm {
+      width: 84.5%;
+    }
+
     h3 {
       @include zero;
       padding: 20px 10px;
@@ -68,6 +72,11 @@
         width: 127px;
         height: 127px;
       }
+
+      @include viewport--sm {
+        top: 201px;
+        left: -25px;
+      }
     }
   }
 
@@ -76,6 +85,10 @@
 
     @include viewport--md {
       margin-top: 10px;
+    }
+
+    @include viewport--sm {
+      margin-top: 22px;
     }
 
     &::before,
@@ -106,6 +119,10 @@
       margin-top: 30px;
     }
 
+    @include viewport--sm {
+      margin-top: 22px;
+    }
+
     &::before {
       top: -32px;
       right: -36px;
@@ -118,6 +135,10 @@
         right: -25px;
         width: 68px;
         height: 68px;
+      }
+
+      @include viewport--sm {
+        right: -20px;
       }
     }
 
