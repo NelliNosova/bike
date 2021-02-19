@@ -12,12 +12,23 @@
     width: 60.5%;
     margin: auto;
     margin-top: 21px;
+
+    @include viewport--md {
+      width: 100%;
+      margin-top: 0;
+    }
   }
 
   &__logo {
     position: absolute;
     top: 297px;
     left: -4px;
+
+    @include viewport--md {
+      position: relative;
+      top: 25px;
+      left: 22px
+    }
   }
 
   &__nav {
@@ -29,6 +40,10 @@
     letter-spacing: -0.005em;
     color: rgba($color-white, 0.7);
     border-bottom: 1px solid rgba($color-white, 0.2);
+
+    @include viewport--md {
+      border-bottom: none;
+    }
   }
 
   a,
@@ -42,9 +57,5 @@
     justify-content: space-between;
     margin-right: 20px;
     margin-left: 17px;
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }

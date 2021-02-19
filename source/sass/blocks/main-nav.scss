@@ -1,0 +1,27 @@
+.main-nav {
+
+  &--close {
+    @include viewport--md {
+      display: flex;
+    }
+
+    .main-nav__wrapper {
+      @include viewport--md {
+        display: none;
+      }
+    }
+  }
+
+  &__toggle {
+    @include zero;
+    display: none;
+    background-color: $color-accent;
+    border: none;
+
+    @include viewport--md {
+      display: inline-block;
+      margin-left: auto;
+      padding: 11px 10px 6px;
+    }
+  }
+}
