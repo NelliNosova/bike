@@ -10,6 +10,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+
+    @include viewport--md {
+      background-image: none;
+      background-color: transparent;
+    }
   }
 
   &__header {
@@ -20,6 +25,10 @@
   &__promo {
     padding-top: 312px;
     padding-bottom: 239px;
+
+    @include viewport--md {
+      padding-top: 0;
+    }
   }
 
   &__about {

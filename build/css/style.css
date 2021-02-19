@@ -603,6 +603,10 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto; }
+  @media (max-width: 1023px) {
+    .body .wrapper-promo {
+      background-image: none;
+      background-color: transparent; } }
 
 .body__header {
   position: absolute;
@@ -611,6 +615,9 @@ button,
 .body__promo {
   padding-top: 312px;
   padding-bottom: 239px; }
+  @media (max-width: 1023px) {
+    .body__promo {
+      padding-top: 0; } }
 
 .body__about {
   width: 80%;
@@ -723,10 +730,30 @@ button,
   margin-left: auto;
   margin-right: auto;
   color: #ffffff; }
+  @media (max-width: 1023px) {
+    .promo {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .promo__box {
     width: 45%; }
+    @media (max-width: 1023px) {
+      .promo__box {
+        width: 100%; } }
+    @media (max-width: 1023px) {
+      .promo__box--tagline {
+        padding-top: 78px;
+        padding-bottom: 79px;
+        background-image: url(../img/bg/bike_tablet.jpg); } }
     .promo__box--form {
       width: 37.25%; }
+      @media (max-width: 1023px) {
+        .promo__box--form {
+          padding-top: 60px;
+          width: 321px;
+          margin: auto; } }
   .promo__tagline {
     margin: 0;
     padding: 0;
@@ -735,6 +762,13 @@ button,
     font-size: 46px;
     line-height: 64px;
     letter-spacing: -0.005em; }
+    @media (max-width: 1023px) {
+      .promo__tagline {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 30px;
+        line-height: 42px;
+        text-align: center; } }
   .promo__content {
     margin: 0;
     padding: 0;
@@ -744,6 +778,14 @@ button,
     line-height: 32px;
     letter-spacing: -0.005em;
     color: rgba(255, 255, 255, 0.8); }
+    @media (max-width: 1023px) {
+      .promo__content {
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center; } }
   .promo__form-content {
     margin: 0;
     padding: 0;
@@ -753,8 +795,15 @@ button,
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.005em; }
+    @media (max-width: 1023px) {
+      .promo__form-content {
+        font-size: 18px;
+        color: #000000; } }
   .promo__form {
     margin-top: 20px; }
+    @media (max-width: 1023px) {
+      .promo__form {
+        margin-top: 30px; } }
 
 .promo-form {
   display: -webkit-box;
@@ -776,12 +825,16 @@ button,
     color: rgba #1c1c1c, 0.5;
     border: 1px solid #c9ccd4;
     border-radius: 4px; }
+    @media (max-width: 1023px) {
+      .promo-form__input {
+        padding: 11px 21px; } }
   .promo-form__btn {
     padding: 15px 28px;
     font-weight: 600;
     font-size: 15px;
     line-height: 21px;
     color: #1c1c1c;
+    background-color: #0ad9c6;
     border-radius: 6px;
     border: none; }
 

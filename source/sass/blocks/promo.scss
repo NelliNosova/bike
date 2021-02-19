@@ -8,11 +8,34 @@
   margin-right: auto;
   color: $color-white;
 
+  @include viewport--md {
+    width: 100%;
+    flex-direction: column;
+  }
+
   &__box {
     width: 45%;
 
+    @include viewport--md {
+      width: 100%;
+    }
+
+    &--tagline {
+      @include viewport--md {
+        padding-top: 78px;
+        padding-bottom: 79px;
+        background-image: url(../img/bg/bike_tablet.jpg);
+      }
+    }
+
     &--form {
       width: 37.25%;
+
+      @include viewport--md {
+        padding-top: 60px;
+        width: 321px;
+        margin: auto
+      }
     }
   }
 
@@ -24,6 +47,14 @@
     font-size: 46px;
     line-height: 64px;
     letter-spacing: -0.005em;
+
+    @include viewport--md {
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 30px;
+      line-height: 42px;
+      text-align: center;
+    }
   }
 
   &__content {
@@ -36,6 +67,15 @@
     line-height: 32px;
     letter-spacing: -0.005em;
     color: rgba($color-white, 0.8);
+
+    @include viewport--md {
+      width: 60%;
+      margin: auto;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: center;
+    }
   }
 
   &__form-content {
@@ -48,9 +88,18 @@
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.005em;
+
+    @include viewport--md {
+      font-size: 18px;
+      color: $color-black;
+    }
   }
 
   &__form {
     margin-top: 20px;
+
+    @include viewport--md {
+      margin-top: 30px;
+    }
   }
 }
