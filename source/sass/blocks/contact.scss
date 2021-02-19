@@ -1,0 +1,44 @@
+.contact {
+
+  p {
+    @include zero;
+
+    width: 60%;
+    margin: auto;
+    margin-top: 28px;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    color: rgba($color-black, 0.7);
+  }
+
+  &__map-box {
+    margin-top: 41px;
+  }
+
+  &__list {
+    @include zero;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 59%;
+    margin: auto;
+    margin-top: 38px;
+  }
+
+  &__item {
+    padding-right: 17px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 15px;
+    }
+  }
+
+
+}

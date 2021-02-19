@@ -617,6 +617,10 @@ button,
 .body__video {
   padding-top: 121px; }
 
+.body__footer {
+  margin-top: 152px;
+  margin-bottom: 98px; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -872,9 +876,51 @@ button,
     border: none;
     background-color: transparent; }
 
+.contact p {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  margin: auto;
+  margin-top: 28px;
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7); }
+
+.contact__map-box {
+  margin-top: 41px; }
+
+.contact__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 59%;
+  margin: auto;
+  margin-top: 38px; }
+
+.contact__item {
+  padding-right: 17px; }
+
+.contact__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .contact__link svg {
+    margin-right: 15px; }
+
 .footer {
   min-height: 100px;
-  padding: 0 60px; }
+  padding: 0 242px; }
 
 .modal {
   position: fixed;
