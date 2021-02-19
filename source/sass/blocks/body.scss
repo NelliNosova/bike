@@ -9,7 +9,13 @@
     margin: auto;
   }
 
-  &__about {
+  &__promo {
     margin-top: 250px;
+  }
+
+  &__about {
+    width: 80%;
+    margin: auto;
+    margin-top: 390px;
   }
 }

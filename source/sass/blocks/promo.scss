@@ -1,0 +1,56 @@
+.promo {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 61%;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-white;
+
+    &__box {
+      width: 45%;
+
+      &--form {
+        width: 37.25%;
+      }
+    }
+
+    &__tagline {
+      @include zero;
+
+      margin-top: 57px;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 64px;
+      letter-spacing: -0.005em;
+    }
+
+    &__content {
+      @include zero;
+
+      margin-top: 25px;
+
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.005em;
+      color: rgba($color-white, 0.8);
+    }
+
+    &__form-content {
+      @include zero;
+
+      margin-top: 10px;
+
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: -0.005em;
+    }
+
+    &__form {
+      margin-top: 20px;
+    }
+}
