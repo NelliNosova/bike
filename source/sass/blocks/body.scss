@@ -28,6 +28,7 @@
 
     @include viewport--md {
       padding-top: 0;
+      padding-bottom: 50px;
     }
   }
 
@@ -36,6 +37,12 @@
     margin: auto;
     margin-top: 152px;
     margin-bottom: 154px;
+
+    @include viewport--md {
+      width: 71%;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
   }
 
   &__types {

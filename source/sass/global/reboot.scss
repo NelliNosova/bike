@@ -149,6 +149,11 @@ button,
   color: $color-dark;
   text-align: center;
 
+  @include viewport--md {
+    font-size: 24px;
+    line-height: 41px;
+  }
+
   &--light {
     color: $color-white;
   }
