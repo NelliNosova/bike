@@ -509,7 +509,7 @@ button,
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  color: #000000;
+  color: #1f1f1f;
   text-align: center; }
 
 .visually-hidden {
@@ -605,7 +605,12 @@ button,
 .body__about {
   width: 80%;
   margin: auto;
-  margin-top: 390px; }
+  margin-top: 390px;
+  margin-bottom: 154px; }
+
+.body__types {
+  padding-top: 150px;
+  padding-bottom: 129px; }
 
 .header {
   display: -webkit-box;
@@ -727,7 +732,7 @@ button,
     font-weight: 600;
     font-size: 15px;
     line-height: 21px;
-    color: #000000;
+    color: #1c1c1c;
     border-radius: 6px;
     border: none; }
 
@@ -772,6 +777,68 @@ button,
         color: #0ad9c6; }
       .about__list li:nth-child(-n+9)::before {
         content: "0" counter(li-counter); }
+
+.types {
+  position: relative;
+  background-color: #f6f7f9; }
+  .types__list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 78.2%;
+    margin: auto;
+    padding-top: 50px; }
+    .types__list li {
+      position: relative; }
+      .types__list li::before, .types__list li::after {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .types__list li:nth-child(3n-2) {
+        margin-top: 10px; }
+        .types__list li:nth-child(3n-2)::before {
+          z-index: -10;
+          top: 155px;
+          left: -60px;
+          width: 180px;
+          height: 180px;
+          background-image: url("../img/sprite/big-circle.svg"); }
+      .types__list li:nth-child(3n-1) {
+        margin-top: 39px; }
+        .types__list li:nth-child(3n-1)::before, .types__list li:nth-child(3n-1)::after {
+          width: 47px;
+          height: 47px;
+          background-image: url("../img/sprite/square.svg"); }
+        .types__list li:nth-child(3n-1)::before {
+          top: -18px;
+          left: -19px; }
+        .types__list li:nth-child(3n-1)::after {
+          top: 542px;
+          right: -23px; }
+      .types__list li:nth-child(3n)::before {
+        top: -32px;
+        right: -36px;
+        width: 95px;
+        height: 95px;
+        background-image: url("../img/sprite/circle.svg"); }
+      .types__list li h3 {
+        margin: 0;
+        padding: 0;
+        padding: 20px 10px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: -0.5px;
+        color: #000000; }
 
 .footer {
   min-height: 100px;
