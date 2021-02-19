@@ -638,6 +638,10 @@ button,
 .body__types {
   padding-top: 149px;
   padding-bottom: 128px; }
+  @media (max-width: 1023px) {
+    .body__types {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
 
 .body__video {
   padding-top: 121px; }
@@ -918,50 +922,83 @@ button,
     width: 78.2%;
     margin: auto;
     padding-top: 50px; }
-    .types__list li {
-      position: relative; }
-      .types__list li::before, .types__list li::after {
-        content: "";
-        position: absolute;
-        background-size: cover;
-        background-repeat: no-repeat; }
-      .types__list li:nth-child(3n-2) {
-        margin-top: 10px; }
-        .types__list li:nth-child(3n-2)::before {
-          z-index: -10;
-          top: 155px;
-          left: -60px;
-          width: 180px;
-          height: 180px;
-          background-image: url("../img/sprite/big-circle.svg"); }
-      .types__list li:nth-child(3n-1) {
-        margin-top: 39px; }
-        .types__list li:nth-child(3n-1)::before, .types__list li:nth-child(3n-1)::after {
-          width: 47px;
-          height: 47px;
-          background-image: url("../img/sprite/square.svg"); }
-        .types__list li:nth-child(3n-1)::before {
-          top: -18px;
-          left: -19px; }
-        .types__list li:nth-child(3n-1)::after {
-          top: 542px;
-          right: -23px; }
-      .types__list li:nth-child(3n)::before {
-        top: -32px;
-        right: -36px;
-        width: 95px;
-        height: 95px;
-        background-image: url("../img/sprite/circle.svg"); }
-      .types__list li h3 {
-        margin: 0;
-        padding: 0;
-        padding: 20px 10px;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 34px;
-        text-align: center;
-        letter-spacing: -0.5px;
-        color: #000000; }
+    @media (max-width: 1023px) {
+      .types__list {
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        width: 83.5%;
+        padding-top: 20px; } }
+    .types__list h3 {
+      margin: 0;
+      padding: 0;
+      padding: 20px 10px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 34px;
+      text-align: center;
+      letter-spacing: -0.5px;
+      color: #000000; }
+    @media (max-width: 1023px) {
+      .types__list img {
+        width: 270px; } }
+
+.types__item {
+  position: relative; }
+  .types__item::before, .types__item::after {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .types__item:nth-child(3n-2) {
+    margin-top: 10px; }
+    .types__item:nth-child(3n-2) img {
+      position: relative;
+      z-index: 10; }
+    .types__item:nth-child(3n-2)::before {
+      top: 155px;
+      left: -60px;
+      width: 180px;
+      height: 180px;
+      background-image: url("../img/sprite/big-circle.svg"); }
+      @media (max-width: 1023px) {
+        .types__item:nth-child(3n-2)::before {
+          top: 201px;
+          left: -37px;
+          width: 127px;
+          height: 127px; } }
+  .types__item:nth-child(3n-1) {
+    margin-top: 39px; }
+    @media (max-width: 1023px) {
+      .types__item:nth-child(3n-1) {
+        margin-top: 10px; } }
+    .types__item:nth-child(3n-1)::before, .types__item:nth-child(3n-1)::after {
+      width: 47px;
+      height: 47px;
+      background-image: url("../img/sprite/square.svg"); }
+      @media (max-width: 1023px) {
+        .types__item:nth-child(3n-1)::before, .types__item:nth-child(3n-1)::after {
+          display: none; } }
+    .types__item:nth-child(3n-1)::before {
+      top: -18px;
+      left: -19px; }
+    .types__item:nth-child(3n-1)::after {
+      top: 542px;
+      right: -23px; }
+  @media (max-width: 1023px) {
+    .types__item:nth-child(3n) {
+      margin-top: 30px; } }
+  .types__item:nth-child(3n)::before {
+    top: -32px;
+    right: -36px;
+    width: 95px;
+    height: 95px;
+    background-image: url("../img/sprite/circle.svg"); }
+    @media (max-width: 1023px) {
+      .types__item:nth-child(3n)::before {
+        top: -20px;
+        right: -25px;
+        width: 68px;
+        height: 68px; } }
 
 .video {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(87.8%, #131314), color-stop(87.8%, #ffffff));

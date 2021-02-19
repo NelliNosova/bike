@@ -48,6 +48,11 @@
   &__types {
     padding-top: 149px;
     padding-bottom: 128px;
+
+    @include viewport--md {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 
   &__video {
