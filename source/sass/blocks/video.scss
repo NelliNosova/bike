@@ -1,0 +1,35 @@
+.video {
+  background: linear-gradient(
+    to bottom,
+    $color-bg-dark 87.8%,
+    $color-white 87.8%);
+
+  p {
+    @include zero;
+    margin: auto;
+    margin-top: 20px;
+    width: 25%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: rgba($color-white, 0.7);
+  }
+
+  &__img-box {
+    position: relative;
+    width: 64.5%;
+    margin: auto;
+    margin-top: 55px;
+  }
+
+  &__play {
+    position: absolute;
+    top: 43.6%;
+    left: 45.9%;
+    border: none;
+    background-color: transparent;
+  }
+
+}

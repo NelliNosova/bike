@@ -511,6 +511,8 @@ button,
   letter-spacing: -0.005em;
   color: #1f1f1f;
   text-align: center; }
+  .section-title--light {
+    color: #ffffff; }
 
 .visually-hidden {
   position: absolute;
@@ -612,6 +614,9 @@ button,
   padding-top: 150px;
   padding-bottom: 129px; }
 
+.body__video {
+  padding-top: 121px; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,11 +643,11 @@ button,
     font-size: 16px;
     line-height: 32px;
     letter-spacing: -0.005em;
-    color: rgba(242, 242, 242, 0.7);
-    border-bottom: 1px solid rgba(242, 242, 242, 0.2); }
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   .header a,
   .header p {
-    color: #f2f2f2; }
+    color: #ffffff; }
   .header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -673,7 +678,7 @@ button,
   width: 61%;
   margin-left: auto;
   margin-right: auto;
-  color: #f2f2f2; }
+  color: #ffffff; }
   .promo__box {
     width: 45%; }
     .promo__box--form {
@@ -694,7 +699,7 @@ button,
     font-size: 20px;
     line-height: 32px;
     letter-spacing: -0.005em;
-    color: rgba(242, 242, 242, 0.8); }
+    color: rgba(255, 255, 255, 0.8); }
   .promo__form-content {
     margin: 0;
     padding: 0;
@@ -839,6 +844,33 @@ button,
         text-align: center;
         letter-spacing: -0.5px;
         color: #000000; }
+
+.video {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(87.8%, #131314), color-stop(87.8%, #ffffff));
+  background: linear-gradient(to bottom, #131314 87.8%, #ffffff 87.8%); }
+  .video p {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    width: 25%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: rgba(255, 255, 255, 0.7); }
+  .video__img-box {
+    position: relative;
+    width: 64.5%;
+    margin: auto;
+    margin-top: 55px; }
+  .video__play {
+    position: absolute;
+    top: 43.6%;
+    left: 45.9%;
+    border: none;
+    background-color: transparent; }
 
 .footer {
   min-height: 100px;

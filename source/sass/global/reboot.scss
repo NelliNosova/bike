@@ -148,4 +148,8 @@ button,
   letter-spacing: -0.005em;
   color: $color-dark;
   text-align: center;
+
+  &--light {
+    color: $color-white;
+  }
 }
