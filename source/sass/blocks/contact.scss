@@ -40,8 +40,8 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 59%;
+    justify-content: space-around;
+    width: 67%;
     margin: auto;
     margin-top: 38px;
 
@@ -51,7 +51,6 @@
     }
 
     @include viewport--sm {
-      justify-content: space-around;
       width: 90%;
       margin-top: 30px;
     }
@@ -59,6 +58,7 @@
 
   &__item {
     padding-right: 17px;
+    margin-bottom: 10px;
 
     @include viewport--md {
       padding-right: 10px;
