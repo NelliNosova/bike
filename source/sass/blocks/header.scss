@@ -21,7 +21,7 @@
     left: -4px;
 
     @include viewport--md {
-      position: relative;
+      // position: relative;
       top: 25px;
       left: 22px;
     }
@@ -33,7 +33,6 @@
 
   &__nav {
     width: 100%;
-    padding-bottom: 8px;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
