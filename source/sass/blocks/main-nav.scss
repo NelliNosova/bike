@@ -1,5 +1,9 @@
 .main-nav {
 
+  a {
+    color: rgba($color-white, 0.7);
+  }
+
   &--close {
     @include viewport--md {
       display: flex;
@@ -12,9 +16,15 @@
     }
   }
 
-  &__toggle {
+}
+
+.main-nav--close {
+  .main-nav__toggle {
     @include zero;
+
     display: none;
+    width: 50px;
+    height: 50px;
     background-color: $color-accent;
     border: none;
 
@@ -22,6 +32,70 @@
       display: inline-block;
       margin-left: auto;
       padding: 11px 10px 6px;
+      background-image: url("../img/sprite/menu.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
+}
+
+.main-nav--open {
+  @include viewport--md {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    min-height: 568px;
+    background-color: $color-white;
+
+    .main-nav__list {
+      @include zero;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      padding: 100px 0 108px;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.35px;
+      color: $color-menu-dark;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        background-image: url("../img/sprite/arrow-down.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+      }
+    }
+
+    .main-nav__item {
+      margin-bottom: 30px;
+      padding: 17px 16px 15px;
+      background-color: $color-bg-grey;
+    }
+
+    .main-nav__toggle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/sprite/icon-close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+
 }
