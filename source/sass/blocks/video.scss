@@ -1,21 +1,12 @@
 .video {
-  background: linear-gradient(
-    to bottom,
-    $color-bg-dark 87.8%,
-    $color-white 87.8%);
+  background: linear-gradient(to bottom, $color-bg-dark 87.8%, $color-white 87.8%);
 
   @include viewport--md {
-    background: linear-gradient(
-    to bottom,
-    $color-bg-dark 83%,
-    $color-white 83%);
+    background: linear-gradient(to bottom, $color-bg-dark 83%, $color-white 83%);
   }
 
   @include viewport--sm {
-    background: linear-gradient(
-    to bottom,
-    $color-bg-dark 88.8%,
-    $color-white 88.8%);
+    background: linear-gradient(to bottom, $color-bg-dark 88.8%, $color-white 88.8%);
   }
 
   p {
@@ -76,6 +67,8 @@
     height: 100%;
     border: none;
     background-color: transparent;
+    outline: none;
+    transition-duration: 0.3s;
 
     svg {
       @include viewport--md {
@@ -88,6 +81,14 @@
         height: 65px;
       }
     }
-  }
 
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
 }

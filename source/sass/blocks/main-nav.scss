@@ -1,24 +1,30 @@
 .main-nav {
-
   a {
     color: rgba($color-white, 0.7);
-  }
 
-  &--close {
-    @include viewport--md {
-      display: flex;
+    &:hover,
+    &:focus {
+      color: $color-accent;
     }
 
-    .main-nav__wrapper {
-      @include viewport--md {
-        display: none;
-      }
+    &:active {
+      color: rgba($color-white, 0.3);
     }
   }
 
 }
 
 .main-nav--close {
+  @include viewport--md {
+    display: flex;
+  }
+
+  .main-nav__wrapper {
+    @include viewport--md {
+      display: none;
+    }
+  }
+
   .main-nav__toggle {
     @include zero;
 
@@ -96,6 +102,4 @@
       background-position: center;
     }
   }
-
-
 }

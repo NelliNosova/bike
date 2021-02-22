@@ -23,11 +23,11 @@
     @include viewport--md {
       position: relative;
       top: 25px;
-      left: 22px
+      left: 22px;
     }
 
     @include viewport--sm {
-      left: 16px
+      left: 16px;
     }
   }
 
