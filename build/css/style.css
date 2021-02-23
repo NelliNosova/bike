@@ -796,7 +796,7 @@ button,
   -ms-flex-item-align: center;
       align-self: center;
   top: 0;
-  right: 0px;
+  right: 0;
   width: 50px;
   height: 50px;
   background-image: url("../img/sprite/icon-close.svg");
