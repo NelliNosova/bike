@@ -6,8 +6,8 @@
     @include zero;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 78.2%;
+    justify-content: space-around;
+    width: 81.7%;
     margin: auto;
     padding-top: 50px;
 
@@ -42,6 +42,11 @@
 
 .types__item {
   position: relative;
+  margin-bottom: 30px;
+
+  @include viewport--md {
+    margin-bottom: 0;
+  }
 
   &::before,
   &::after {
