@@ -1,6 +1,16 @@
 .header {
+  // position: absolute;
   display: flex;
   align-items: center;
+  width: 100%;
+
+  @include viewport--md {
+    position: relative;
+  }
+
+  &--absolute {
+    position: absolute;
+  }
 
   &__wrapper {
     position: relative;
@@ -8,6 +18,10 @@
     width: 60.5%;
     margin: auto;
     margin-top: 21px;
+
+    @include viewport--lg {
+      width: 78.8%;
+    }
 
     @include viewport--md {
       width: 100%;

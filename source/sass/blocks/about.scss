@@ -1,5 +1,22 @@
 .about {
   position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 152px;
+  margin-bottom: 102px;
+
+  @include viewport--md {
+    width: 71%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  @include viewport--sm {
+    width: 91%;
+    margin-top: 20px;
+    margin-bottom: 82px;
+  }
+
 
   &__list {
     @include zero;
@@ -32,7 +49,7 @@
 
     position: relative;
     width: 22%;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     counter-increment: li-counter;
 
     @include viewport--md {

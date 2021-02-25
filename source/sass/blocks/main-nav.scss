@@ -1,5 +1,6 @@
 .main-nav {
   padding-bottom: 8px;
+
   &__wrapper {
     @include viewport--md {
       background-color: $color-white;
@@ -8,6 +9,7 @@
 
   &__link {
     color: rgba($color-white, 0.7);
+    transition-duration: 0.3s;
 
     @include viewport--md {
       position: relative;

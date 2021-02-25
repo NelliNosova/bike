@@ -57,6 +57,7 @@
   &__map-frame {
     width: 100%;
     height: 530px;
+    border: none;
 
     @include viewport--md {
       height: 545px;

@@ -1,4 +1,4 @@
-<header class="body__header js-header header @@if (context.mod) { header--@@mod }">
+<header class="body__header js-header header  @@if (context.mod) { header--@@mod }">
   <div class="header__wrapper">
     <a class="header__logo" @@if (!context.main) { href="index.html"} aria-label="Переход на главную">
       <svg width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,22 +13,22 @@
       </svg>
     </a>
 
-    <nav class="header__nav main-nav js__main-nav">
-      <button class="main-nav__toggle btn-reset js__menu-toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+    <nav class="header__nav main-nav js-main-nav">
+      <button class="main-nav__toggle btn-reset js-menu-toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
 
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list list">
-          <li class="main-nav__item js__menu-item">
+          <li class="main-nav__item js-menu-item">
             <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#about" }>О нас</a>
           </li>
-          <li class="main-nav__item js__menu-item">
+          <li class="main-nav__item js-menu-item">
             <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#types" }>Виды велосипедов</a>
           </li>
-          <li class="main-nav__item js__menu-item">
+          <li class="main-nav__item js-menu-item">
             <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#video" }>Видео про велосипеды</a>
           </li>
-          <li class="main-nav__item js__menu-item">
+          <li class="main-nav__item js-menu-item">
             <a class="main-nav__link @@if (context.headerActiveLinkIndex === 3) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 3) { href="#contact" }>Контакты</a>
           </li>
         </ul>

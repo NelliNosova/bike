@@ -7,8 +7,6 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="Велосипеды">
 <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-300.woff2" as="font" crossorigin>
-<link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font" crossorigin>
-<link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font" crossorigin>
 <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-700.woff2" as="font" crossorigin>
 
 <link rel="stylesheet" href="css/style.min.css">
@@ -17,7 +15,7 @@
 
 
 </head>
-<body class="body js">
+<body>
   <div style="display: none;">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
 <clipPath id="clip0">
@@ -59,7 +57,7 @@
   </div>
 
   <div class="wrapper">
-    <header class="body__header js-header header ">
+    <header class="body__header js-header header  ">
   <div class="header__wrapper">
     <a class="header__logo"  aria-label="Переход на главную">
       <svg width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,22 +72,22 @@
       </svg>
     </a>
 
-    <nav class="header__nav main-nav js__main-nav">
-      <button class="main-nav__toggle btn-reset js__menu-toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+    <nav class="header__nav main-nav js-main-nav">
+      <button class="main-nav__toggle btn-reset js-menu-toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
 
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list list">
-          <li class="main-nav__item js__menu-item">
+          <li class="main-nav__item js-menu-item">
             <a class="main-nav__link "  href="#about" >О нас</a>
           </li>
-          <li class="main-nav__item js__menu-item">
+          <li class="main-nav__item js-menu-item">
             <a class="main-nav__link "  href="#types" >Виды велосипедов</a>
           </li>
-          <li class="main-nav__item js__menu-item">
+          <li class="main-nav__item js-menu-item">
             <a class="main-nav__link "  href="#video" >Видео про велосипеды</a>
           </li>
-          <li class="main-nav__item js__menu-item">
+          <li class="main-nav__item js-menu-item">
             <a class="main-nav__link "  href="#contact" >Контакты</a>
           </li>
         </ul>
@@ -102,32 +100,36 @@
     <main>
       <h1 class="visually-hidden">Велосипеды</h1>
 
-      <div class="wrapper-promo">
-        <section class="body__promo promo">
-  <h2 class="section-title visually-hidden">О нас</h2>
-  <div class="promo__box promo__box--tagline">
-    <p class="promo__tagline">
-      Мы продаем велосипеды
-    </p>
-    <p class="promo__content">
-        Наш магазин отбирает только самые лучшие велосипеды для продажи
-    </p>
-  </div>
-  <div class="promo__box promo__box--form">
-    <p class="promo__form-content">
-      Заполните поля ниже и мы подберем велосипед Вашей мечты
-    </p>
-    <form class="promo__form promo-form" method="POST" action="https://echo.htmlacademy.ru">
-      <input class="promo-form__input" id="name" type="text" placeholder="Введите Ваше Имя" required>
-      <label class="promo-form__lable visually-hidden" for="name">Ваше Имя</label>
-      <input class="promo-form__input" id="tel" type="tel" placeholder="Введите Ваш номер телефона" required>
-      <label class="promo-form__lable visually-hidden" for="tel">Ваш номер телефона</label>
-      <button class="promo-form__btn" type="submit">Подобрать велосипед мечты</button>
-    </form>
+
+      <section class="body__promo promo">
+  <div class="promo__wrapper">
+    <h2 class="visually-hidden">О нас</h2>
+    <div class="promo__box promo__box--tagline">
+      <p class="promo__tagline">
+        Мы продаем велосипеды
+      </p>
+      <p class="promo__content">
+          Наш магазин отбирает только самые лучшие велосипеды для продажи
+      </p>
+    </div>
+    <div class="promo__box promo__box--form">
+      <p class="promo__form-content">
+        Заполните поля ниже и мы подберем велосипед Вашей мечты
+      </p>
+      <div class="promo__form promo-form">
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <input id="name" type="text" placeholder="Введите Ваше Имя" required>
+          <label class="visually-hidden" for="name">Ваше Имя</label>
+          <input id="tel" type="tel" placeholder="Введите Ваш номер телефона" required>
+          <label class="visually-hidden" for="tel">Ваш номер телефона</label>
+          <button class="promo-form__btn" type="submit">Подобрать велосипед мечты</button>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 
-      </div>
+
 
       <section class="body__about about" id="about">
   <h2 class="section-title">Несколько фактов о нас</h2>
@@ -197,12 +199,14 @@
       <!-- 1x: 929px; 2x:1858px-->
       <img src="img/content/bike-video_mobile@1.png" srcset="img/content/bike-video_mobile@2.png 2x" width="929" height="522" alt="Видео">
     </picture>
-    <button class="video__play" type="button" aria-label="Воспроизвести видео">
-      <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z" fill="#0AD9C6"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"/>
-      </svg>
-    </button>
+    <div class="video__play-box">
+      <button class="video__play" type="button" aria-label="Воспроизвести видео">
+        <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z" fill="#0AD9C6"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"/>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -227,11 +231,11 @@
           <img class="contact__map-img" src="img/content/map_mobile@1.png" srcset="img/content/map_mobile@2.png 2x" width="957" height="530" alt="Видео">
         </picture>
       </div>
-      <iframe class="contact__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2spl!4v1614087495435!5m2!1sru!2spl" width="320" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe class="contact__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2spl!4v1614087495435!5m2!1sru!2spl" width="320" height="250" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <ul class="contact__list list">
       <li class="contact__item contact__item--mail">
-        <a class="contact__link" href="malto:puteshestviemechta@gmail.ru">
+        <a class="contact__link" href="mailto:puteshestviemechta@gmail.ru">
           <svg width="26" height="20">
             <use xlink:href="#mail"></use>
           </svg>
@@ -239,7 +243,7 @@
         </a>
       </li>
       <li class="contact__item">
-        <a class="contact__link" href="tel:+7(499)-784-684-46">
+        <a class="contact__link" href="tel:+749978468446">
           <svg width="22" height="23">
             <use xlink:href="#phone"></use>
           </svg>

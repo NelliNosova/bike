@@ -2,7 +2,6 @@
 //---------------------------------
 
 @import "vendor/normalize";
-// @import "vendor/swiper";
 
 // Global
 //---------------------------------
@@ -17,7 +16,7 @@
 // Blocks
 //---------------------------------
 
-@import "blocks/body";
+@import "blocks/wrapper";
 @import "blocks/header";
 @import "blocks/main-nav";
 @import "blocks/promo";

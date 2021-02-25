@@ -1,12 +1,12 @@
 .footer {
   min-height: 100px;
-  padding: 0 242px;
+  padding: 152px 242px 80px;
 
   @include viewport--md {
-    padding: 0 35px;
+    padding: 64px 35px 43px;
   }
 
   @include viewport--sm {
-    padding: 0;
+    padding: 70px 0 30px;
   }
 }
