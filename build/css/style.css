@@ -1239,7 +1239,7 @@ button,
       .video__img-box {
         width: 90%;
         margin-top: 53px; } }
-  .video__img {
+  .video img {
     display: block;
     margin: auto; }
   .video__play {
@@ -1291,15 +1291,36 @@ button,
 
 .contact__map-box {
   position: relative;
+  width: 100%;
   margin-top: 41px; }
   @media (max-width: 1023px) {
     .contact__map-box {
       margin-top: 20px; } }
+  .contact__map-box img {
+    width: auto;
+    height: auto; }
 
 .contact__map-area {
   position: absolute;
   z-index: -10;
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 530px; }
+  @media (max-width: 1023px) {
+    .contact__map-area {
+      height: 545px; } }
+  @media (max-width: 767px) {
+    .contact__map-area {
+      height: 250px; } }
 
 .contact__map-frame {
   width: 100%;
@@ -1309,18 +1330,6 @@ button,
       height: 545px; } }
   @media (max-width: 767px) {
     .contact__map-frame {
-      height: 250px; } }
-
-.contact__map-img {
-  display: block;
-  margin: auto;
-  height: 530px; }
-  @media (max-width: 1023px) {
-    .contact__map-img {
-      width: auto;
-      height: 545px; } }
-  @media (max-width: 767px) {
-    .contact__map-img {
       height: 250px; } }
 
 .contact__list {
