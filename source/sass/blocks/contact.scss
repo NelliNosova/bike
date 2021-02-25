@@ -1,5 +1,5 @@
 .contact {
-  p {
+  &__content {
     @include zero;
 
     width: 60%;
@@ -33,14 +33,6 @@
     img {
       width: auto;
       height: auto;
-
-      // @include viewport--md {
-      //   height: 545px;
-      // }
-
-      // @include viewport--sm {
-      //   height: 250px;
-      // }
     }
   }
 
@@ -73,10 +65,6 @@
     @include viewport--sm {
       height: 250px;
     }
-  }
-
-  &__map-img {
-
   }
 
   &__list {

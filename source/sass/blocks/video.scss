@@ -9,7 +9,7 @@
     background: linear-gradient(to bottom, $color-bg-dark 88.8%, $color-white 88.8%);
   }
 
-  p {
+  &__content {
     @include zero;
     width: 25%;
     margin: auto;

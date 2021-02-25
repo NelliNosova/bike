@@ -132,10 +132,10 @@
       <section class="body__about about" id="about">
   <h2 class="section-title">Несколько фактов о нас</h2>
   <ol class="about__list list">
-    <li>Самый широкий выбор велосипедов!</li>
-    <li>Доставка велосипедов по всей России!</li>
-    <li>Большой выбор крутых аксессуаров!</li>
-    <li>Профессиональные консультации!</li>
+    <li class="about__item">Самый широкий выбор велосипедов!</li>
+    <li class="about__item">Доставка велосипедов по всей России!</li>
+    <li class="about__item">Большой выбор крутых аксессуаров!</li>
+    <li class="about__item">Профессиональные консультации!</li>
   </ol>
 </section>
 
@@ -149,9 +149,10 @@
         <source type="image/webp" media="(min-width: 768px)"  srcset="img/content/road-bike_tablet@1.webp 1x, img/content/road-bike_tablet@2.webp 2x">
         <source media="(min-width: 1024px)"  srcset="img/content/road-bike_desktop@1.png 1x, img/content/road-bike_desktop@2.png 2x">
         <source media="(min-width: 768px)"  srcset="img/content/road-bike_tablet@1.png 1x, img/content/road-bike_tablet@2.pmg 2x">
+          <!-- 1x: 342px; 2x:684px-->
         <img src="img/content/road-bike_tablet@1.png" srcset="img/content/road-bike_tablet@2.png 2x" width="342" height="503" alt="Дорожный велосипед">
       </picture>
-      <h3>Дорожный велосипед</h3>
+      <h3 class="types__title">Дорожный велосипед</h3>
     </li>
     <li class="types__item">
       <picture>
@@ -159,9 +160,10 @@
         <source type="image/webp" media="(min-width: 768px)"  srcset="img/content/mountain-bike_tablet@1.webp 1x, img/content/mountain-bike_tablet@2.webp 2x">
         <source media="(min-width: 1024px)"  srcset="img/content/mountain-bike_desktop@1.png 1x, img/content/mountain-bike_desktop@2.png 2x">
         <source media="(min-width: 768px)"  srcset="img/content/mountain-bike_tablet@1.png 1x, img/content/mountain-bike_tablet@2.pmg 2x">
+        <!-- 1x: 342px; 2x:684px-->
         <img src="img/content/mountain-bike_tablet@1.png" srcset="img/content/mountain-bike_tablet@2.png 2x" width="342" height="566" alt="Горный велосипед">
       </picture>
-      <h3>Горный велосипед</h3>
+      <h3 class="types__title">Горный велосипед</h3>
     </li>
     <li class="types__item">
       <picture>
@@ -169,9 +171,10 @@
         <source type="image/webp" media="(min-width: 768px)"  srcset="img/content/children-bike_tablet@1.webp 1x, img/content/children-bike_tablet@2.webp 2x">
         <source media="(min-width: 1024px)"  srcset="img/content/children-bike_desktop@1.png 1x, img/content/children-bike_desktop@2.png 2x">
         <source media="(min-width: 768px)"  srcset="img/content/children-bike_tablet@1.png 1x, img/content/childrenbike_tablet@2.pmg 2x">
+        <!-- 1x: 342px; 2x:684px-->
         <img src="img/content/children-bike_tablet@1.png" srcset="img/content/children-bike_tablet@2.png 2x" width="342" height="513" alt="Детский велосипед">
       </picture>
-      <h3>Детский велосипед</h3>
+      <h3 class="types__title">Детский велосипед</h3>
     </li>
   </ul>
 </section>
@@ -180,7 +183,7 @@
       <section class="body__video video" id="video">
   <div class="video__content-box">
     <h2 class="section-title section-title--light">Видео про велосипеды</h2>
-    <p>
+    <p class="video__content">
       В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
     </p>
   </div>
@@ -191,6 +194,7 @@
       <source type="image/webp" srcset="img/content/bike-video_mobile@1.webp 1x, img/content/bike-video_mobile@2.webp 2x">
       <source media="(min-width: 1024px)"  srcset="img/content/bike-video_desktop@1.png 1x, img/content/bike-video_desktop@2.png 2x">
       <source media="(min-width: 768px)"  srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+      <!-- 1x: 929px; 2x:1858px-->
       <img src="img/content/bike-video_mobile@1.png" srcset="img/content/bike-video_mobile@2.png 2x" width="929" height="522" alt="Видео">
     </picture>
     <button class="video__play" type="button" aria-label="Воспроизвести видео">
@@ -209,7 +213,7 @@
   <section class="body__contact contact" id="contact">
     <div class="contact__content-box">
       <h2 class="section-title section-title--footer">Как нас найти?</h2>
-      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д.&nbsp;19</p>
+      <p class="contact__content">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д.&nbsp;19</p>
     </div>
     <div class="contact__map-box">
       <div class="contact__map-area">
@@ -219,6 +223,7 @@
           <source type="image/webp" srcset="img/content/map_mobile@1.webp 1x, img/content/map_mobile@2.webp 2x">
           <source media="(min-width: 1024px)"  srcset="img/content/map_desktop@1.png 1x, img/content/map_desktop@2.png 2x">
           <source media="(min-width: 768px)"  srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <!-- 1x: 957px; 2x:1914px-->
           <img class="contact__map-img" src="img/content/map_mobile@1.png" srcset="img/content/map_mobile@2.png 2x" width="957" height="530" alt="Видео">
         </picture>
       </div>

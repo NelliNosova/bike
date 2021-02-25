@@ -6,7 +6,7 @@
     }
   }
 
-  a {
+  &__link {
     color: rgba($color-white, 0.7);
 
     @include viewport--md {
@@ -44,6 +44,12 @@
 
 .main-nav__list {
   @include zero;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 17px;
 
   @include viewport--md {
     display: flex;
