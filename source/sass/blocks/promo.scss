@@ -30,13 +30,24 @@
         background-color: $color-bg-dark;
         background-repeat: no-repeat;
         background-position: center center;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/bg/bike_tablet@2.jpg");
+          background-size: auto 100%;
+        }
+
       }
 
       @include viewport--sm {
         padding-top: 64px;
         padding-bottom: 69px;
-        background-image: url("../img/bg/bike__mobile.jpg");
+        background-image: url("../img/bg/bike_mobile.jpg");
         background-size: cover;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/bg/bike_mobile@2.jpg");
+          background-size: auto 100%;
+        }
       }
     }
 

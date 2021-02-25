@@ -612,6 +612,10 @@ button,
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .body .wrapper-promo {
+        background-image: url("../img/bg/bike_desktop@2.jpg");
+        background-size: auto 100%; } }
     @media (max-width: 1023px) {
       .body .wrapper-promo {
         background-image: none;
@@ -880,12 +884,20 @@ button,
         background-color: #131314;
         background-repeat: no-repeat;
         background-position: center center; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+    .promo__box--tagline {
+      background-image: url("../img/bg/bike_tablet@2.jpg");
+      background-size: auto 100%; } }
     @media (max-width: 767px) {
       .promo__box--tagline {
         padding-top: 64px;
         padding-bottom: 69px;
-        background-image: url("../img/bg/bike__mobile.jpg");
+        background-image: url("../img/bg/bike_mobile.jpg");
         background-size: cover; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .promo__box--tagline {
+      background-image: url("../img/bg/bike_mobile@2.jpg");
+      background-size: auto 100%; } }
     .promo__box--form {
       width: 37.25%; }
       @media (max-width: 1023px) {

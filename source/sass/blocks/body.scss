@@ -1,6 +1,6 @@
 .body {
   min-width: $viewport--sm;
-  
+
   .wrapper {
     max-width: $viewport--xxl;
     margin: auto;
@@ -12,6 +12,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/bike_desktop@2.jpg");
+      background-size: auto 100%;
+    }
 
     @include viewport--md {
       background-image: none;
