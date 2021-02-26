@@ -15,21 +15,46 @@
 
     <nav class="header__nav main-nav js-main-nav">
       <button class="main-nav__toggle btn-reset js-menu-toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-
+        <svg class="main-nav__toggle-open" width="30" height="30">
+          <use xlink:href="#menu"></use>
+        </svg>
+        <svg class="main-nav__toggle-close" width="50" height="50">
+          <use xlink:href="#icon-close"></use>
+        </svg>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list list">
           <li class="main-nav__item js-menu-item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#about" }>О нас</a>
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#about" }>
+            <span>О нас</span>
+            <svg width="25" height="25">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+            </a>
           </li>
           <li class="main-nav__item js-menu-item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#types" }>Виды велосипедов</a>
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#types" }>
+              <span>Виды велосипедов</span>
+              <svg width="25" height="25">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+            </a>
           </li>
           <li class="main-nav__item js-menu-item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#video" }>Видео про велосипеды</a>
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#video" }>
+              <span>Видео про велосипеды</span>
+              <svg width="25" height="25">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+            </a>
           </li>
           <li class="main-nav__item js-menu-item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 3) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 3) { href="#contact" }>Контакты</a>
+            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 3) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 3) { href="#contact" }>
+              <span>Контакты</span>
+              <svg width="25" height="25">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>

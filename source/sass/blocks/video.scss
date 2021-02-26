@@ -72,32 +72,53 @@
 
   &__play {
     @include zero;
+    position: relative;
 
     align-self: center;
+    width: 65px;
+    height: 65px;
     border: none;
-    background-color: transparent;
+    background-color: $color-accent;
+    border-radius: 50%;
     outline: none;
     cursor: pointer;
     transition-duration: 0.3s;
 
+    @include viewport--md {
+      width: 90px;
+      height: 90px;
+    }
+
+    @include viewport--sm {
+      width: 65px;
+      height: 65px;
+    }
+
     svg {
+      position: absolute;
+      top: 24px;
+      left: 28px;
+      width: 15px;
+      height: 20px;
+
       @include viewport--md {
-        width: 90px;
-        height: 90px;
+        top: 31px;
+        left: 33px;
+        width: 27px;
+        height: 28px;
       }
 
       @include viewport--sm {
-        width: 65px;
-        height: 65px;
+        top: 22px;
+        left: 28px;
+        width: 15px;
+        height: 20px;
       }
     }
 
     &:hover,
     &:focus {
-      path:first-child {
-        transition-duration: 0.3s;
-        fill: $color-white;
-      }
+      background-color: $color-white;
     }
 
     &:active {
