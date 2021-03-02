@@ -3,11 +3,10 @@
   background-image: url("../img/bg/bike_desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg/bike_desktop@2.jpg");
-    background-size: auto 100%;
   }
 
   @include viewport--md {
@@ -56,10 +55,10 @@
         background-color: $color-bg-dark;
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
 
         @media (min-resolution: 2dppx) {
           background-image: url("../img/bg/bike_tablet@2.jpg");
-          background-size: auto 100%;
         }
       }
 
@@ -67,11 +66,9 @@
         padding-top: 64px;
         padding-bottom: 69px;
         background-image: url("../img/bg/bike_mobile.jpg");
-        background-size: cover;
 
         @media (min-resolution: 2dppx) {
           background-image: url("../img/bg/bike_mobile@2.jpg");
-          background-size: auto 100%;
         }
       }
     }

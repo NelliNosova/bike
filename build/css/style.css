@@ -652,7 +652,8 @@ button,
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        height: 100%;
+        margin: 0;
+        width: 100vw;
         padding: 100px 0 108px; } }
     @media (max-width: 767px) {
       .main-nav .main-nav__list {
@@ -715,7 +716,8 @@ button,
     .main-nav--open {
       z-index: 10;
       position: absolute;
-      width: 100%;
+      width: 100vw;
+      height: 100vh;
       min-height: 568px;
       background-color: #ffffff; }
       .main-nav--open .main-nav__toggle-close {
@@ -753,11 +755,10 @@ button,
   background-image: url("../img/bg/bike_desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto; }
+  background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .promo {
-      background-image: url("../img/bg/bike_desktop@2.jpg");
-      background-size: auto 100%; } }
+      background-image: url("../img/bg/bike_desktop@2.jpg"); } }
   @media (max-width: 1023px) {
     .promo {
       background-image: none;
@@ -807,21 +808,19 @@ button,
         background-image: url("../img/bg/bike_tablet.jpg");
         background-color: #131314;
         background-repeat: no-repeat;
-        background-position: center center; } }
+        background-position: center center;
+        background-size: cover; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .promo__box--tagline {
-      background-image: url("../img/bg/bike_tablet@2.jpg");
-      background-size: auto 100%; } }
+      background-image: url("../img/bg/bike_tablet@2.jpg"); } }
     @media (max-width: 767px) {
       .promo__box--tagline {
         padding-top: 64px;
         padding-bottom: 69px;
-        background-image: url("../img/bg/bike_mobile.jpg");
-        background-size: cover; } }
+        background-image: url("../img/bg/bike_mobile.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .promo__box--tagline {
-      background-image: url("../img/bg/bike_mobile@2.jpg");
-      background-size: auto 100%; } }
+      background-image: url("../img/bg/bike_mobile@2.jpg"); } }
     .promo__box--form {
       width: 37.25%; }
       @media (max-width: 1023px) {
@@ -942,6 +941,7 @@ button,
     background-color: #0ad9c6;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s; }
     @media (max-width: 767px) {
@@ -954,13 +954,13 @@ button,
 
 .about {
   position: relative;
-  width: 80%;
+  width: 84%;
   margin: auto;
   margin-top: 152px;
-  margin-bottom: 102px; }
+  margin-bottom: 72px; }
   @media (max-width: 1023px) {
     .about {
-      width: 71%;
+      width: 76%;
       margin-top: 20px;
       margin-bottom: 30px; } }
   @media (max-width: 767px) {
@@ -976,9 +976,8 @@ button,
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-top: 100px;
     font-size: 22px;
     line-height: 34px;
@@ -999,7 +998,7 @@ button,
     padding: 0;
     position: relative;
     width: 22%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     counter-increment: li-counter; }
     @media (max-width: 1023px) {
       .about__item {
@@ -1044,7 +1043,7 @@ button,
   @media (max-width: 1023px) {
     .types {
       padding-top: 50px;
-      padding-bottom: 50px; } }
+      padding-bottom: 48px; } }
   @media (max-width: 767px) {
     .types {
       padding-bottom: 34px; } }
