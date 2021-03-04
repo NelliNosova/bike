@@ -17,7 +17,7 @@
         <form id="js-promo-form" method="POST" action="https://echo.htmlacademy.ru">
           <input id="name" type="text" name="name" placeholder="Введите Ваше Имя" required>
           <label class="visually-hidden" for="name">Ваше Имя</label>
-          <input id="tel" type="tel" name="tel" placeholder="Введите Ваш номер телефона" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"  required>
+          <input id="tel" type="tel" name="tel" placeholder="Введите Ваш номер телефона" pattern="^[\+]?[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
           <label class="visually-hidden" for="tel">Ваш номер телефона</label>
           <button class="promo-form__btn" type="submit">Подобрать велосипед мечты</button>
         </form>
